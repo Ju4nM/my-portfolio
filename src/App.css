@@ -1,0 +1,55 @@
+.fade-in {
+  animation: fade-in .4s;
+  @apply ease-in-out;
+  transition: opacity 400ms;
+}
+
+.from-left-to-right {
+  animation: from-left-to-right .4s;
+  @apply ease-in-out;
+  transition: transform 400ms;
+}
+
+@keyframes from-left-to-right {
+  from {
+    transform: translate(-100vw);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.dark-button {
+  @apply text-white;
+  @apply bg-gray-800;
+  @apply hover:bg-gray-900;
+  @apply focus:outline-none;
+  @apply focus:ring-gray-500;
+  @apply font-medium;
+  @apply rounded-lg;
+  @apply text-sm;
+  @apply px-5;
+  @apply py-2.5;
+  @apply me-2;
+  @apply mb-2;
+  @apply dark:bg-gray-800;
+  @apply dark:hover:bg-gray-700;
+  @apply active:ring-2;
+  @apply transition-all;
+  @apply ring-0;
+  @apply dark:border-gray-700;
+  @apply flex;
+  @apply gap-3;
+  @apply items-center;
+}
