@@ -3,7 +3,7 @@ import { navItems } from "../const/navItems.const";
 import { ReactElement, useRef } from "react";
 import { fadeOutAnimation, hideToLeftAnimation } from "../../core/animations/animations";
 
-export default function Navbar() {
+export default function Navbar({ className }: { className?: string }) {
 
   const overlayRef = useRef<HTMLDivElement>(null);
   const sideBarRef = useRef<HTMLDivElement>(null);
@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className = "flex p-3 sm:bg-[#00000066] bg-transparent sticky top-0">
+      <div className = { `flex p-3 lg:p-5 md:bg-[#00000066] bg-transparent sticky xl:fixed left-0 right-0 top-0 text-lg backdrop-blur-md ${ className }` }>
         <button type = "button" className = "md:hidden" onClick = { onShowSidebarHandler }>
           <FaBarsStaggered size = "30" />
         </button>
