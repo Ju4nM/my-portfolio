@@ -1,5 +1,5 @@
-import ResponsiveGrid from "../../utils/ResponsiveGrid";
-import RepositoryCard from "../../dashboard/modules/repositories/components/RepositoryCard";
+import ResponsiveGrid from "../../utils/ResponsiveGrid.component";
+import RepositoryCard from "../../dashboard/modules/repositories/components/RepositoryCard.component";
 
 export default function Repositories() {
   

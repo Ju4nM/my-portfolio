@@ -23,7 +23,7 @@ export default function ResponsiveGrid({ elements, gap = 0, max }: ResponseGridP
 
     for (let i = 1; i <= columnNumber; i++) {
       columns.push(
-        <div className = "flex flex-col" style = {{ gap, width: `${ columnWidth - gap }px`}}>
+        <div className = "flex flex-col" style = {{ gap, width: `${ columnWidth - gap / 1.5 }px`}}>
           { getChunk(elements, i, columnNumber).map(el => el) }
         </div>
       );
@@ -53,7 +53,7 @@ export default function ResponsiveGrid({ elements, gap = 0, max }: ResponseGridP
   }, [])
 
   return (
-    <div ref = { elementRef } className = "flex justify-center" style = {{ gap }}>
+    <div ref = { elementRef } className = "flex w-full justify-center" style = {{ gap }}>
       { columns.map((column, index) => <div key={ index }>{ column }</div>) }
     </div>
   )

@@ -31,6 +31,7 @@
 }
 
 .dark-button {
+  @apply select-none;
   @apply text-white;
   @apply bg-gray-800;
   @apply hover:bg-gray-900;

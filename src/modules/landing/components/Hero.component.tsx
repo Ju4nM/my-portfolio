@@ -1,13 +1,13 @@
 import { FaChevronDown, FaEnvelope } from "react-icons/fa6"
-import Navbar from "./Navbar"
+import Navbar from "./Navbar.component"
 
 export default function Hero({ className }: { className?: string }) {
   return (
     
     <div className = { `h-full w-full flex flex-col ${ className }` }>
       <div className = "xl:flex xl:h-full xl:flex-col">
-        <Navbar />
-        <div className = "flex flex-col gap-10 sm:gap-14 p-5 sm:p-10 xl:p-5 pt-8 pb-0 flex-shrink-0 xl:flex-grow xl:flex-row-reverse xl:justify-between xl:justify-self-center xl:box-border xl:pt-0 xl:gap-32 2xl:gap-5">
+        <Navbar className = { "invisible" } />
+        <div className = "flex flex-col gap-10 sm:gap-14 p-5 sm:p-10 xl:p-5 pb-0 flex-shrink-0 xl:flex-grow xl:flex-row-reverse xl:justify-between xl:justify-self-center xl:box-border xl:pt-0 xl:gap-32 2xl:gap-5">
           <div className = "flex justify-center items-center 2xl:box-border 2xl:mx-20">
             <img src="https://avatars.githubusercontent.com/u/97267337?v=4" className = "min-h-36 min-w-36 max-h-36 max-w-36 sm:max-h-72 sm:max-w-72 rounded-full transition-all"/>
           </div>
@@ -25,7 +25,7 @@ export default function Hero({ className }: { className?: string }) {
           </div>
         </div>
       </div>
-      <div className = "p-5 w-full flex justify-center items-center flex-col flex-end flex-grow xl:flex-grow-0">
+      <div className = "p-5 w-fit mx-auto flex justify-center items-center flex-col flex-end flex-grow xl:flex-grow-0">
         <FaChevronDown className = "animate-bounce" size = "25"/>
         <FaChevronDown className = "animate-bounce" size = "25"/>
       </div>
