@@ -25,10 +25,10 @@ export default function Hero({ className }: { className?: string }) {
           </div>
         </div>
       </div>
-      <div className = "p-5 w-fit mx-auto flex justify-center items-center flex-col flex-end flex-grow xl:flex-grow-0">
+      <a href = "#xp" className = "p-5 w-fit mx-auto flex justify-center items-center flex-col flex-end flex-grow xl:flex-grow-0">
         <FaChevronDown className = "animate-bounce" size = "25"/>
         <FaChevronDown className = "animate-bounce" size = "25"/>
-      </div>
+      </a>
     </div>
   )
 }

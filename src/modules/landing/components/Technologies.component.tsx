@@ -1,5 +1,5 @@
 export default function Technologies() {
   return (
-    <div id = "technologies">Technologies</div>
+    <div id = "technologies" className = "landing-section">Technologies</div>
   )
 }

@@ -54,3 +54,27 @@
   @apply gap-3;
   @apply items-center;
 }
+
+.textMoving:hover {
+  @apply animate-[textMoving];
+  @apply sm:animate-none;
+  /* animation: textMoving 5s linear infinite; */
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  display: block;
+}
+
+@keyframes textMoving{
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-80%);
+  }
+}
+
+.landing-section {
+  @apply pt-20;
+}

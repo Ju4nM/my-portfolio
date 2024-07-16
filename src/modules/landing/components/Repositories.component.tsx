@@ -1,4 +1,4 @@
-import ResponsiveGrid from "../../utils/ResponsiveGrid.component";
+import ResponsiveGrid from "../../shared/components/ResponsiveGrid.component";
 import RepositoryCard from "../../dashboard/modules/repositories/components/RepositoryCard.component";
 
 export default function Repositories() {
@@ -20,7 +20,7 @@ export default function Repositories() {
   ];
 
   return (
-    <div className = "pb-10">
+    <div className = "pb-10 landing-section" id = "repos">
       <h4 className = "text-large">Algunos de mis repositorios ⬇</h4>
       <ResponsiveGrid elements = { elements } max = { 500 } gap = {10} />
     </div>
