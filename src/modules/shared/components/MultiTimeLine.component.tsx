@@ -16,7 +16,7 @@ export default function MultiTimeLine({ data }: { data: TimeLineInterface[] }) {
     <div className = "w-full">
       <div className = "w-full flex mb-3">
         { data.map((item, index) => /* tabs */
-          <button onClick = { () => onTabClickHandler(item) } key = { index } className = { `overflow-hidden flex-1 border-b-2 transition-all first:rounded-l-md last:rounded-r-md ${ currentTimeLine == item ? "border-customPurple bg-[#784bd911] text-lg font-semibold" : "border-[#00000033] hover:border-customPurple" } bg-[#00000033] p-3` }>
+          <button onClick = { () => onTabClickHandler(item) } key = { index } className = { `overflow-hidden flex-1 border-b-2 transition-all outline-none first:rounded-l-md last:rounded-r-md ${ currentTimeLine == item ? "border-customPurple bg-[#784bd911] text-lg font-semibold" : "border-[#00000033] hover:border-customPurple" } bg-[#00000033] p-3` }>
             <span className = "textMoving sm:animate-none text-nowrap text-ellipsis">{ item.title }</span>
           </button>
         ) }

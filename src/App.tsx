@@ -1,10 +1,13 @@
 import './App.css'
-import LandingPage from './modules/landing/page/Landing.page'
+import { AppProvider } from './modules/core/App/context/App.context';
+import Index from './modules/Index';
 
 function App() {
 
   return (
-    <LandingPage />
+    <AppProvider>
+      <Index />
+    </AppProvider>
   )
 }
 
