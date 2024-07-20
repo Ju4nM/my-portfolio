@@ -30,8 +30,8 @@ export async function fadeOutAnimation (element: HTMLElement | null): Promise<bo
   return true;
 }
 
-export const createAnimation = (loaderName: string, frames: string, suffix: string): string => {
-  const animationName = `react-spinners-${loaderName}-${suffix}`;
+export const createAnimation = (name: string, frames: string, suffix: string): string => { // Funcion traida de la libreria react-spinners de davidhu2000
+  const animationName = `_ANIMATION_-${name}-${suffix}`;
   if (typeof window == "undefined" || !window.document) return animationName;
 
   const styleEl = document.createElement("style");

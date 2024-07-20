@@ -23,14 +23,15 @@ export default function Navbar({ className = "", startPosition = "sticky" }: { c
 
   return (
     <>
-      <div className = { `flex p-3 lg:p-5 md:bg-[#00000066] bg-transparent z-10 ${ startPosition } xl:fixed left-0 right-0 top-0 text-lg backdrop-blur-md ${ className }` }>
+      <div className = { `flex p-3 lg:p-5 md:bg-[#00000066] lg:mx-auto bg-transparent z-10 ${ startPosition } xl:fixed left-0 lg:w-fit lg:rounded-full right-0 top-0 lg:top-2 text-lg backdrop-blur-md ${ className }` }>
         <button type = "button" className = "md:hidden" onClick = { onShowSidebarHandler }>
           <FaBarsStaggered size = "30" />
         </button>
-        <div className="hidden md:flex w-full justify-evenly items-center">
+        <div className="hidden md:flex w-full justify-evenly lg:gap-20 items-center">
           { navLinks }
         </div>
       </div>
+
       <div onClick = { onHiddenSidebarHandler } ref = { overlayRef } className = "z-10 fixed top-0 bottom-0 right-0 left-0 hidden fade-in bg-[#00000066]">
         <div ref = { sideBarRef } className = "h-full bg-ground flex-col p-3 gap-3 hidden from-left-to-right">
           { navLinks }

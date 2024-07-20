@@ -24,7 +24,7 @@ export default function ResponsiveGrid({ elements, gap = 0, max }: ResponseGridP
     for (let i = 1; i <= columnNumber; i++) {
       columns.push(
         <div className = "flex flex-col" style = {{ gap, width: `${ columnWidth - gap / 1.5 }px`}}>
-          { getChunk(elements, i, columnNumber).map(el => el) }
+          { getChunk(elements, i - 1, columnNumber).map(el => el) }
         </div>
       );
     }
