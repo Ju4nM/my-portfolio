@@ -40,6 +40,7 @@ export default function Experience() {
 	]
   return (
     <div id = "xp" className = "landing-section">
+			<h3 className = "text-xl pb-4 font-semibold">Mi experiencia</h3>
       <MultiTimeLine data = { timeLineData } />
     </div>
   )

@@ -3,11 +3,11 @@ import { NavItem } from "../interfaces/navItem.inteface.ts";
 export const navItems: NavItem[] = [
 	{
 		id: "xp",
-		text: "Experiencia academica",
+		text: "Mi experiencia",
 	},
 	{
 		id: "technologies",
-		text: "Tecnologias que he usado",
+		text: "Tecnologías que he usado",
 	},
 	{
 		id: "repos",

@@ -5,16 +5,9 @@ import InfiniteSlider from "../../shared/components/InfiniteSlider.component";
 export default function Technologies() {
   return (
     <div id = "technologies" className = "landing-section">
-      <h1>Tecnologias que he usado</h1>
+      <h3 className = "text-xl pb-4 font-semibold">Tecnolog&iacute;as que he usado</h3>
       <InfiniteSlider direction = "left" speed = { 30 }>
         {/* { elements } */}
-        <FaHtml5 size={ "8rem" } />
-        <FaReact size={ "8rem" } />
-        <SiNestjs size={ "8rem" } />
-        <FaCss3 size={ "8rem" }/>
-      </InfiniteSlider>
-      <InfiniteSlider direction="right" speed = { 30 }>
-        {/* { [... elements].reverse() } */}
         <FaHtml5 size={ "8rem" } />
         <FaReact size={ "8rem" } />
         <SiNestjs size={ "8rem" } />
