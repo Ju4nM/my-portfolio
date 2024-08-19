@@ -33,7 +33,7 @@ export default function Navbar({ className = "", startPosition = "sticky" }: { c
       </div>
 
       <div onClick = { onHiddenSidebarHandler } ref = { overlayRef } className = "z-10 fixed top-0 bottom-0 right-0 left-0 hidden fade-in bg-[#00000066]">
-        <div ref = { sideBarRef } className = "h-full bg-ground flex-col p-3 gap-3 hidden from-left-to-right">
+        <div ref = { sideBarRef } className = "h-full bg-ground flex-col p-6 text-lg gap-3 hidden from-left-to-right">
           { navLinks }
         </div>
       </div>

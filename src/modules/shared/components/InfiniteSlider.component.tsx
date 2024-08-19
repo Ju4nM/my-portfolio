@@ -49,7 +49,7 @@ export default function InfiniteSlider({ children, direction = "left", speed = 1
   }, []);
 
   return (
-    <div ref = { sliderRef } className = "overflow-hidden my-3 flex gap-4" style = {{ maskImage: "linear-gradient(to right, transparent, #0a0a0a 30%, #0a0a0a 70%, transparent)" }}>
+    <div ref = { sliderRef } className = "overflow-hidden my-3 flex gap-4" style = {{ maskImage: "linear-gradient(to right, transparent, #100E18 30%, #100E18 70%, transparent)" }}>
       { elementsWrapper({ ariaHidden: false, extraClasses: "", ref: elementsWrapperRef }) }
       { wrappers }
     </div>

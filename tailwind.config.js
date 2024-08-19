@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        ground: "#0A0A0A",
+        // ground: "#0A0A0A",
+        ground: "#100E18",
         customPurple: "#AE88FF",
         customGray: "#1f1f1f",
         customGrayLight: "#333333"

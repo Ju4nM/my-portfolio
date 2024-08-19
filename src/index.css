@@ -15,5 +15,5 @@
 
 body {
   scroll-behavior: smooth;
-  @apply bg-ground 
+  @apply bg-ground
 }
