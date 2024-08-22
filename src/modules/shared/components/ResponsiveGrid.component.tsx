@@ -50,7 +50,7 @@ export default function ResponsiveGrid({ elements, gap = 0, max }: ResponseGridP
     resizeObserver.observe(parent);
 
     return () => resizeObserver.disconnect();
-  }, [])
+  }, [elements])
 
   return (
     <div ref = { elementRef } className = "flex w-full justify-center" style = {{ gap }}>

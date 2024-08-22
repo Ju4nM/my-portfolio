@@ -1,0 +1,29 @@
+import TimeLineInterface from "../interfaces/timeLine.interface";
+import { LandMarkInterface } from "../interfaces/landMark.interface";
+import LandMark from "./LandMark.component";
+import { useEffect, useState } from "react";
+
+export default function TimeLine ({ data, extraClasses = "", maxWidthClasses = "max-w-lg" }: { data: TimeLineInterface, extraClasses?: string, maxWidthClasses?: string }) {
+	const [ landMarks, setLandMarks ] = useState<LandMarkInterface[]>([]);
+	const [ summary, setSummary ] = useState<string>("");
+	
+	const loadData = () => {
+		setLandMarks(prev => data.landMarks ?? prev);
+		setSummary(prev => data.summary ?? prev);
+	}
+	
+	useEffect(() => {
+		loadData();
+	});
+	
+	return (
+		<div>
+			<div className = "mb-5">
+				<p>{ summary }</p>
+			</div>
+			<div className = { `border-l-2 relative border-customPurple ${ extraClasses } ${ maxWidthClasses }` }>
+				{ !!landMarks && landMarks.map((item: LandMarkInterface, index) => <LandMark key = { index } data = {item} />) }
+			</div>
+		</div>
+	);
+}

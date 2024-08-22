@@ -1,5 +1,5 @@
 
-export interface TimeLineItemInterface {
+export interface LandMarkInterface {
   title: string;
   description: string;
   date: Date;

@@ -1,8 +1,8 @@
-import { TimeLineItemInterface } from "../interfaces/timeLineItem.interface";
+import { LandMarkInterface } from "../interfaces/landMark.interface";
 
-export default function TimeLineItem ({ data }: { data: TimeLineItemInterface }) {
+export default function LandMark ({ data }: { data: LandMarkInterface }) {
 
-  let dateParsed: string = data.date.toLocaleDateString("es", {
+  let dateParsed: string = new Date(data.date).toLocaleDateString("es", {
     day: "2-digit",
     month: "long",
     year: "numeric"

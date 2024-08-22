@@ -2,15 +2,16 @@ import { useEffect, useState } from "react";
 import TimeLineInterface from "../interfaces/timeLine.interface";
 import TimeLine from "./TimeLine.component";
 
-export default function MultiTimeLine({ data }: { data: TimeLineInterface[] }) {
+export default function MultiTimeLine({ data = [] }: { data: TimeLineInterface[] }) {
   
   const [ currentTimeLine, setTimeLine ] = useState<TimeLineInterface>(data[0]);
 
   const onTabClickHandler = (timeLine: TimeLineInterface) => setTimeLine(timeLine);
 
   useEffect(() => {
+    console.log(data);
     setTimeLine(data[0]);
-  }, [])
+  }, [ data ])
 
   return (
     <div className = "w-full">
@@ -21,7 +22,7 @@ export default function MultiTimeLine({ data }: { data: TimeLineInterface[] }) {
           </button>
         ) }
       </div>
-      <TimeLine data = { currentTimeLine } maxWidthClasses = "max-w-2xl" />
+      { !!currentTimeLine && <TimeLine data = { currentTimeLine } maxWidthClasses = "max-w-2xl" />}
     </div>
   );
 }
