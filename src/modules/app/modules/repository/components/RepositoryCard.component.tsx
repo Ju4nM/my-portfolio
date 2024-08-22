@@ -48,13 +48,13 @@ export default function RepositoryCard({ data }: { data: RepositoryInterface }) 
       </div>
       <div className = "flex items-center gap-4">
         <FaGithub size = {30} className = "hidden sm:block" />
-        <span className = "overflow-hidden text-nowrap text-ellipsis">{ html_url }</span>
+        <span className = "overflow-hidden text-nowrap text-ellipsis"><a href = { html_url }>{ html_url }</a></span>
       </div>
       <div className = "overflow-hidden transition-all" style = {{ height: textHeight }} ref = { textElement }>
         <p className = { `text-ellipsis overflow-hidden transition-all ${ textExpanded ? '' : 'text-nowrap' }` } >{ summary }</p>
       </div>
-      <div className = "overflow-x-auto overflow-y-hidden p-2 space-x-2">
-        <span className = "bg-gray-700 rounded-full p-1 px-2">{ language }</span>
+      <div className = "overflow-x-auto overflow-y-hidden p-2 pl-0 space-x-2">
+        <span className = "bg-[#383838] rounded-full p-1 px-2">{ language }</span>
       </div>
     </div>
   )
