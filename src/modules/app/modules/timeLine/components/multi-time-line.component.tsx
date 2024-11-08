@@ -9,7 +9,6 @@ export default function MultiTimeLine({ data = [] }: { data: TimeLineInterface[]
   const onTabClickHandler = (timeLine: TimeLineInterface) => setTimeLine(timeLine);
 
   useEffect(() => {
-    console.log(data);
     setTimeLine(data[0]);
   }, [ data ])
 

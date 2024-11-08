@@ -4,7 +4,6 @@ import Navbar from "./nav-bar.component"
 
 export default function Hero({ className }: { className?: string }) {
   return (
-    
     <div className = { `h-full w-full flex flex-col ${ className }` }>
       <div className = "xl:flex xl:h-full xl:flex-col">
         <Navbar className = { "invisible" } />

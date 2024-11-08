@@ -28,7 +28,6 @@ export function AppProvider ({ children }: { children: ReactNode }) {
       return response;
     },
     async (error) => {
-      console.log(error);
       setIsLoading(prev => prev - 1);
     }
   );
