@@ -1,6 +1,6 @@
 import axios, { AxiosInstance, CreateAxiosDefaults } from "axios";
 import { createContext, ReactNode, useState } from "react";
-import { AppContextInterface } from "../interfaces/appContext.interface";
+import { AppContextInterface } from "../interfaces/app-context.interface";
 import LoadingScreen from "../../../shared/components/LoadingScreen.component";
 
 export const AppContext = createContext<AppContextInterface | {}>({});

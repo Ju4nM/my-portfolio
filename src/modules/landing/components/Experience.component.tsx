@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import MultiTimeLine from "../../app/modules/timeLine/components/MultiTimeLine.component";
-import { LandMarkInterface } from "../../app/modules/timeLine/interfaces/landMark.interface";
 import TimeLineInterface from "../../app/modules/timeLine/interfaces/timeLine.interface";
 import { useLanding } from "../hooks/useLanding.hook";
 
@@ -19,7 +18,7 @@ export default function Experience() {
 
   return (
     <div id = "xp" className = "landing-section">
-			<h3 className = "text-xl pb-4 font-semibold">Mi experiencia</h3>
+			<h3 className = "text-xl text-white pb-4 font-semibold">Mi experiencia</h3>
       <MultiTimeLine data = { timeLines } />
     </div>
   )

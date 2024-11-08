@@ -19,7 +19,7 @@ export default function TimeLine ({ data, extraClasses = "", maxWidthClasses = "
 	return (
 		<div>
 			<div className = "mb-5">
-				<p>{ summary }</p>
+				<p className = "text-white">{ summary }</p>
 			</div>
 			<div className = { `border-l-2 relative border-customPurple ${ extraClasses } ${ maxWidthClasses }` }>
 				{ !!landMarks && landMarks.map((item: LandMarkInterface, index) => <LandMark key = { index } data = {item} />) }

@@ -20,7 +20,7 @@ export default function Repositories() {
 
   return (
     <div className = "pb-10 landing-section" id = "repos">
-      <h3 className = "text-xl pb-4 font-semibold">Algunos de mis repositorios de <a className = "underline text-customPurple transition-all hover:text-purple-400" href="https://github.com/Ju4nM">GitHub</a></h3>
+      <h3 className = "text-xl text-white pb-4 font-semibold">Algunos de mis repositorios de <a className = "underline text-customPurple transition-all hover:text-purple-400" href="https://github.com/Ju4nM">GitHub</a></h3>
       <ResponsiveGrid elements = { elements } max = { 500 } gap = {10} />
     </div>
   )

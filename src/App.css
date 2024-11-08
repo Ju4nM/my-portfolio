@@ -6,6 +6,7 @@
 
 .from-left-to-right {
   animation: from-left-to-right .4s;
+ 
   @apply ease-in-out;
   transition: transform 400ms;
 }
@@ -77,4 +78,56 @@
 
 .landing-section {
   @apply pt-24;
+}
+
+.hero-pic::before {
+  content: "";
+  @apply top-0;
+  @apply bottom-0;
+  @apply left-0;
+  @apply right-0;
+  @apply absolute;
+  @apply rounded-full;
+  @apply border-2;
+  @apply border-customPurple;
+  /* @apply border-t-customPurple;
+  @apply border-l-customPurple;
+  @apply border-r-customPurple;
+  @apply border-b-customPurple; */
+}
+
+.before-animation-duration-10::before {
+  animation-duration: 10s;
+}
+
+.before-animation-duration-20::before {
+  animation-duration: 20s;
+}
+
+.before-animation-duration-30::before {
+  animation-duration: 30s;
+}
+
+.spin-before-left::before {
+  animation-timing-function: linear;
+  animation-name: spinLeft;
+  animation-iteration-count: infinite;
+}
+
+.spin-before-right::before {
+  animation-timing-function: linear;
+  animation-name: spinRight;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spinLeft {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinRight {
+  from {
+    transform: rotate(360deg);
+  }
 }

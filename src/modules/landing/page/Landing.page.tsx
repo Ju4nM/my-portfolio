@@ -3,7 +3,6 @@ import Hero from "../components/Hero.component"
 import Navbar from "../components/Navbar.component"
 import Repositories from "../components/Repositories.component"
 import Technologies from "../components/Technologies.component"
-import { useLanding } from "../hooks/useLanding.hook"
 
 export default function LandingPage() {
 
