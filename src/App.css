@@ -41,8 +41,9 @@
   @apply font-medium;
   @apply rounded-lg;
   @apply text-sm;
-  @apply px-5;
-  @apply py-2.5;
+  @apply p-3;
+  /* @apply px-5;
+  @apply py-2.5; */
   @apply me-2;
   @apply mb-2;
   @apply dark:bg-gray-800;
@@ -129,5 +130,17 @@
 @keyframes spinRight {
   from {
     transform: rotate(360deg);
+  }
+}
+
+.hero-scroll-animation {
+  animation: fade-out both linear .1s;
+  animation-timeline: view();
+  animation-range: exit;
+}
+
+@keyframes fade-out {
+  80%, 100% {
+    opacity: 0;
   }
 }

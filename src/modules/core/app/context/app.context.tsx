@@ -27,7 +27,7 @@ export function AppProvider ({ children }: { children: ReactNode }) {
       setIsLoading(prev => prev - 1);
       return response;
     },
-    async (error) => {
+    async () => {
       setIsLoading(prev => prev - 1);
     }
   );
